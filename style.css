@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#fb009f,#fe0202);
+    font-family: sans-serif;
+}
+.container{
+    text-align: center;
+}
+.text{
+    color:white;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+.page{
+    width: 350px;
+    background: white;
+    border-radius: 5px;
+    padding-bottom: 15px;
+
+}
+.title{
+    padding: 30px 0;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: 'Pacifico',cursive;
+}
+form{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+form input{
+    margin-bottom: 5px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+input[type="text"],input[type="password"]{
+    padding-left: 10px;
+    position: relative;
+    height: 35px;
+    font-size: 15px;
+}
+input::placeholder{
+    font-size: 12px;
+    font-weight: normal;  
+}
+form button{
+    border: none;
+    background: rgb(15, 190, 234);
+    padding:5px;
+    margin-top: 5px;;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor:pointer;
+}
+form .option{
+     color:grey;
+     margin : 10px 0;
+     font-weight : bold;
+     position: relative;
+}
+form .option:after{
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;
+    background: #b6b6b6;
+    left:0%;
+    top:50%;
+    transform:translateY(-50%);
+    border: radius 50px;
+}
+form .option:before{
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;
+    background: #b6b6b6;
+    right:0%;
+    top:50%;
+    transform:translateY(-50%);
+    border: radius 50px;
+}
+.fblink{
+    margin-top: 15px;
+    width: 100%;
+}
+.fblink span{
+    font-size: 17px;
+    margin-right: 5px;
+    color:blue;
+}
+.fblink a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.forget-id{
+    margin: 15px;
+}
+.forget-id a{
+    text-decoration: none;
+    color:black;
+    font-size: 12px;
+    font-weight: 500;
+}
+.page .signup{
+    position:relative;
+    border:1px solid grey;
+    width:90%;
+    left:50%;
+    transform:translateX(-50%);
+    margin-top:30px;
+}
+.signup a{
+    text-decoration: none;
+    margin-left: 5px;
+    color:rgb(67, 139, 207);
+    font-weight: bold;
+}
